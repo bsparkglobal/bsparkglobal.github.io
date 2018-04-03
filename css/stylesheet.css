@@ -224,7 +224,7 @@ a:focus, a:hover, a:active {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 88%;
+    height: 94%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -273,7 +273,7 @@ a:focus, a:hover, a:active {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 94%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -482,6 +482,9 @@ a:focus, a:hover, a:active {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding-top: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .footer a {
