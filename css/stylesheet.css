@@ -43,7 +43,7 @@
   color: #f3f3f3;
 }
 
-.layer2_text img {
+.layer2_text im
   display: none;
 }
 
@@ -252,7 +252,8 @@ a:focus, a:hover, a:active {
     flex-shrink: 0;
     flex-grow: 0;
     padding-top: 155px;
-    margin-left: -120px;
+    margin-left: -95px;
+
   }
   /* layer3 Main draws the actual layer3 */
   .layer3_main {
@@ -437,7 +438,7 @@ a:focus, a:hover, a:active {
     font-family: 'spartan_mbbold';
     background-color: #ff4620;
     color: #f3f3f3;
-    font-size: 1.1em;
+    font-size: 0.8em;
     position: relative;
     padding: 0;
   }
@@ -478,7 +479,7 @@ a:focus, a:hover, a:active {
   .layer5 {
     font-family: 'spartan_mbregular';
     font-size: 0.8em;
-    padding-left: 260px;
+    padding-left: 320px;
   }
   .circle-xl {
     display: inline-block;
@@ -531,16 +532,20 @@ a:focus, a:hover, a:active {
     margin-left: 40px;
   }
   .layer5 .element1 ul {
+    margin-top: 0;
+margin-bottom: 0;
     margin-left: 40px;
     list-style-type: none;
   }
   .layer5 li {
-    padding-bottom: 0.8em;
+    padding-bottom: 0.5em;
   }
   .layer5 .element2 {
     margin-left: 120px;
   }
   .layer5 .element2 ul {
+    margin-top: 0;
+margin-bottom: 0;
     margin-left: 30px;
     list-style-type: none;
   }
@@ -548,6 +553,8 @@ a:focus, a:hover, a:active {
     margin-left: 135px;
   }
   .layer5 .element3 ul {
+    margin-top: 0;
+margin-bottom: 0;
     margin-left: 14px;
     list-style-type: none;
   }
@@ -555,12 +562,13 @@ a:focus, a:hover, a:active {
     margin-left: 195px;
   }
   .layer5 .element4 ul {
+    margin-top: 0;
+margin-bottom: 0;
     margin-left: 3px;
     list-style-type: none;
   }
   .layer6 {
     text-align: right;
-    margin-top: -1.2em;
   }
   .layer6 img {
     max-width: 15%;
