@@ -1,89 +1,74 @@
 @charset "UTF-8";
-/* Main Container -  this controls the size of the layer2 */
 
-.layer2_container {
-  width: 400px;
-  height: 400px;
-  padding: 0;
-  /*	border : 1px solid red; */
+.layer1 {
+  text-align: center;
+  font-family: 'spartan_mbregular';
+  font-size: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* layer2 Main draws the actual layer2 */
+.layer1 strong {
+  font-family: 'spartan_mbsemibold';
+  color: #e04200;
+}
+
+.layer1 img {
+  max-width: 80%;
+  padding-bottom: 2em;
+  order: 1;
+}
+
+.layer1 span {
+  text-align: left;
+  font-family: 'spartan_mbregular';
+  margin-top: -9px;
+  max-width: 75%;
+  order: 2;
+  padding-bottom: 1em;
+}
 
 .layer2_main {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background-color: #ff4620;
   margin: 0;
-  padding: 0;
-  margin-top: -10;
+  padding: 10px;
 }
-
-/* layer2 Text Container - constrains text area to within the layer2 */
-
-.layer2_text_container {
-  /* area constraints */
-  width: 80%;
-  height: 70%;
-  max-width: 80%;
-  max-height: 70%;
-  margin: 0;
-  padding: 0;
-  /* some position nudging to center the text area */
-  position: relative;
-  left: 10%;
-  top: 11%;
-  /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
-  transform-style: preserve-3d;
-  /*border : 1px solid green;*/
-}
-
-/* layer2 Text - the appearance of the text within the layer2 plus vertical centering */
 
 .layer2_text {
   font-family: 'spartan_mbregular';
-  text-align: center;
   font-size: 0.9em;
   color: #f3f3f3;
-  /* vertical centering technique */
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.layer2_text strong {
-  font-family: 'spartan_mbbold';
-  color: #ffffff;
+.layer2_text img {
+  display:none;
 }
 
-.layer2_text b {
-  font-family: 'spartan_mbbold' color: #ffffff;
+.layer3_text {
+  color: #19181a;
+  font-family: 'spartan_mblight';
+  font-size: 0.9em;
+  text-align: left;
+  padding: 1em;
 }
 
-/* Main Container -  this controls the size of the layer3 */
-
-.layer3_container {
-  width: 380px;
-  height: 380px;
-  padding: 0;
-  margin-left: auto;
-  margin-right: 10%;
-  margin-top: 70%;
-  /* margin-top: 290px; */
-  /*	border : 1px solid red; */
+.layer3_text h2 {
+  font-family: 'spartan_mbsemibold';
+  color: #000000;
+  font-size: 1.2em;
 }
 
-/* layer3 Main draws the actual layer3 */
+.layer3_text h2 strong {
+  font-family: 'spartan_mbsemibold';
+  color: #e04200;
+}
 
-.layer3_main {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 10px solid rgba(255, 70, 32, .5);
-  margin: 0;
-  padding: 0;
+.layer3_text strong {
+  font-family: 'spartan_mbsemibold';
 }
 
 .layer3_form {
@@ -124,345 +109,30 @@
   color: #e04200;
 }
 
-/* layer3 Text Container - constrains text area to within the layer3 */
-
-.layer3_text_container {
-  /* area constraints */
-  width: 90%;
-  height: 70%;
-  max-width: 90%;
-  max-height: 70%;
-  margin: 0;
-  padding: 0;
-  /* some position nudging to center the text area */
-  position: relative;
-  left: 5%;
-  top: 15%;
-  /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
-  transform-style: preserve-3d;
-  /*border : 1px solid green;*/
-}
-
-/* layer3 Text - the appearance of the text within the layer3 plus vertical centering */
-
-.layer3_text {
-  color: #19181a;
-  font-family: 'spartan_mblight';
-  font-size: 0.9em;
-  text-align: center;
-  /* vertical centering technique */
-  position: relative;
-  top: 35%;
-  transform: translateY(-50%);
-}
-
-.layer3_text h2 {
-  font-family: 'spartan_mbsemibold';
-  color: #000000;
-  font-size: 1.2em;
-}
-
-.layer3_text h2 strong {
-  font-family: 'spartan_mbsemibold';
-  color: #e04200;
-}
-
-.layer3_text strong {
-  font-family: 'spartan_mbsemibold';
-}
-
-a:link, a:visited {
-  color: #e04200;
-}
-
-a:focus, a:hover, a:active {
-  color: #e04100;
-}
-
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-flip {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
- */
-
-.l-box {
-  padding: 1em;
-}
-
-.l-box-lrg {
-  padding: 2em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.is-center {
-  text-align: center;
-}
-
-/*
- * -- SPLASH STYLES --
- * This is the blue top section that appears on the page.
- */
-
-.splash-container {
-  background-image: url("../images/cape.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-  overflow: hidden;
-  /* The following styles are required for the "scroll-over" effect */
-  width: 100%;
-  height: 94%;
-  top: 0;
-  left: 0;
-  position: fixed !important;
-}
-
-.splash {
-  /* absolute center .splash within .splash-container */
-  width: 80%;
-  height: 50%;
-  margin: auto;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* This is the main heading that appears on the blue section */
-
-.splash-head {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  border: 3px solid white;
-  padding: 1em 1.6em;
-  font-weight: 100;
-  border-radius: 5px;
-  line-height: 1em;
-}
-
-/* This is the subheading that appears on the blue section */
-
-.splash-subhead {
-  color: white;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-}
-
-/*
- * -- CONTENT STYLES --
- * This represents the content area (everything below the blue section)
- */
-
-.content-wrapper {
-  /* These styles are required for the "scroll-over" effect */
-  position: absolute;
-  top: 94%;
-  width: 100%;
-  min-height: 12%;
-  z-index: 2;
-  background: white;
-}
-
-/* We want to give the content area some more padding */
-
-.content {
-  padding: 1em 1em 3em;
-}
-
-/* This is the class used for the main content headers (<h2>) */
-
-.content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
-}
-
-/* This is a modifier class used when the content-head is inside a ribbon */
-
-.content-head-ribbon {
-  color: white;
-}
-
-/* This is the class used for the content sub-headers (<h3>) */
-
-.content-subhead {
-  color: #1f8dd6;
-}
-
-.content-subhead i {
-  margin-right: 7px;
-}
-
-.layer1 {
-  text-align: right;
-  font-family: 'spartan_mbregular';
-  font-size: 1.3em;
-  padding: 1em;
-}
-
-.layer1 strong {
-  font-family: 'spartan_mbsemibold';
-  color: #e04200;
-}
-
-.layer1 img {
-  max-width: 25%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.layer1 span {
-  font-family: 'spartan_mbregular';
-  margin-top: -9px;
-  display: inline-block;
-  vertical-align: top;
-  max-width: 75%;
-  /* in case of longer text */
-}
-
-/* This is the class used for layer4 */
-
 .layer4 {
   font-family: 'spartan_mbbold';
   background-color: #ff4620;
+  text-align: center;
   color: #f3f3f3;
   font-size: 1.1em;
-  position: relative;
-  padding: 0;
+  padding: 1em;
 }
-
 .layer4 img {
-  max-width: 15%;
-  display: inline-block;
-  vertical-align: middle;
+  display: none;
 }
 
 .layer4 h2 {
-  display: inline-block;
   vertical-align: middle;
-  max-width: 80%;
-  /* in case of longer text */
-}
-
-/* This is class used for layer5 */
-
-.layer5_background {
-  background: #ffffff;
-  background-image: url("../images/girl.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .layer5 {
   font-family: 'spartan_mbregular';
-  font-size: 0.8em;
-}
-
-.circle-xl {
-  display: inline-block;
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
-  background: #e04200;
-  vertical-align: middle;
-  margin-right: 3em;
-}
-
-.circle-l {
-  display: inline-block;
-  border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
-  background: #e04200;
-  vertical-align: middle;
-  margin-right: 2.5em;
-}
-
-.circle-m {
-  display: inline-block;
-  border-radius: 50%;
-  width: 2em;
-  height: 2em;
-  background: #e04200;
-  vertical-align: middle;
-  margin-right: 2em;
-}
-
-.circle-s {
-  display: inline-block;
-  border-radius: 50%;
-  width: 1.2em;
-  height: 1.2em;
-  background: #e04200;
-  vertical-align: middle;
-  margin-right: 1.2em;
-}
-
-.layer5 h3 {
-  display: inline-block;
-  font-family: 'spartan_mbbold';
-  font-size: 1.2em;
-  color: #e04200;
-  vertical-align: middle;
-  max-width: 80%;
+  font-size: 0.9em;
+  padding: 1em;
 }
 
 .layer5 strong {
   font-family: 'spartan_mbbold';
-}
-
-.layer5 .element1 {
-  margin-left: 40px;
-}
-
-.layer5 .element1 ul {
-  margin-left: 40px;
-  list-style-type: none;
-}
-
-.layer5 li {
-  padding-bottom: 0.8em;
-}
-
-.layer5 .element2 {
-  margin-left: 120px;
-}
-
-.layer5 .element2 ul {
-  margin-left: 30px;
-  list-style-type: none;
-}
-
-.layer5 .element3 {
-  margin-left: 135px;
-}
-
-.layer5 .element3 ul {
-  margin-left: 14px;
-  list-style-type: none;
-}
-
-.layer5 .element4 {
-  margin-left: 195px;
-}
-
-.layer5 .element4 ul {
-  margin-left: 3px;
-  list-style-type: none;
 }
 
 .layer6 {
@@ -483,12 +153,6 @@ a:focus, a:hover, a:active {
   /* in case of longer text */
 }
 
-.layer7 {
-  text-align: right;
-}
-
-/* This is the class used for the footer */
-
 .footer {
   background: #FFFFFF;
   position: fixed;
@@ -497,8 +161,555 @@ a:focus, a:hover, a:active {
   padding-top: 5px;
   padding-left: 1em;
   padding-right: 1em;
+  display: flex;
 }
 
 .footer a {
   font-family: 'spartan_mbsemibold';
+}
+
+a:link, a:visited {
+  color: #e04200;
+}
+
+a:focus, a:hover, a:active {
+  color: #e04100;
+}
+
+@media screen and (min-width: 960px) {
+  .layer2 {
+    display:flex;
+    justify-content:center;
+    padding-left: 128px;
+  }
+
+  /* Main Container -  this controls the size of the layer2 */
+  .layer2_container {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: -20px;
+    /*	border : 1px solid red; */
+  }
+
+  /* layer2 Main draws the actual layer2 */
+
+  .layer2_main {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff4620;
+    margin: 0;
+    padding: 0;
+    margin-top: -10;
+  }
+
+  /* layer2 Text Container - constrains text area to within the layer2 */
+
+  .layer2_text_container {
+    /* area constraints */
+    width: 80%;
+    height: 70%;
+    max-width: 80%;
+    max-height: 70%;
+    margin: 0;
+    padding: 0;
+    /* some position nudging to center the text area */
+    position: relative;
+    left: 10%;
+    top: 11%;
+    /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+    transform-style: preserve-3d;
+    /*border : 1px solid green;*/
+  }
+
+  /* layer2 Text - the appearance of the text within the layer2 plus vertical centering */
+
+  .layer2_text {
+    font-family: 'spartan_mbregular';
+    text-align: center;
+    font-size: 0.9em;
+    color: #f3f3f3;
+    /* vertical centering technique */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .layer2_text strong {
+    font-family: 'spartan_mbbold';
+    color: #ffffff;
+  }
+
+  .layer2_text b {
+    font-family: 'spartan_mbbold' color: #ffffff;
+  }
+
+  /* Main Container -  this controls the size of the layer3 */
+
+  .layer3_container {
+    width: 370px;
+    height: 370px;
+    padding: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    padding-top: 210px;
+    margin-left: -120px;
+  }
+
+  /* layer3 Main draws the actual layer3 */
+
+  .layer3_main {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 10px solid rgba(255, 70, 32, .5);
+    margin: 0;
+    padding: 0;
+  }
+
+  .layer3_form {
+    color: #e04200;
+    font-size: 0.8em;
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .layer3_form_textfield {
+    border: 0px solid;
+    border-bottom: 1px solid #e04200;
+    width: 90%;
+    padding: 2px;
+  }
+
+  .layer3_form_info {
+    padding: 0.3em;
+  }
+
+  .layer3_form input[type=email] {
+    border: 0px;
+    width: 83%;
+  }
+
+  .layer3_form input[type=submit] {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #e04200;
+    color: #ffffff;
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  .layer3_form input[type=submit]:focus, .layer3_form input[type=submit]:hover {
+    border: 1px solid #e04200;
+    background-color: #ffffff;
+    color: #e04200;
+  }
+
+  /* layer3 Text Container - constrains text area to within the layer3 */
+
+  .layer3_text_container {
+    /* area constraints */
+    width: 90%;
+    height: 70%;
+    max-width: 90%;
+    max-height: 70%;
+    margin: 0;
+    padding: 0;
+    /* some position nudging to center the text area */
+    position: relative;
+    left: 5%;
+    top: 15%;
+    /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+    transform-style: preserve-3d;
+    /*border : 1px solid green;*/
+  }
+
+  /* layer3 Text - the appearance of the text within the layer3 plus vertical centering */
+
+  .layer3_text {
+    color: #19181a;
+    font-family: 'spartan_mblight';
+    font-size: 0.8em;
+    text-align: center;
+    /* vertical centering technique */
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  .layer3_text h2 {
+    font-family: 'spartan_mbsemibold';
+    color: #000000;
+    font-size: 1.2em;
+  }
+
+  .layer3_text h2 strong {
+    font-family: 'spartan_mbsemibold';
+    color: #e04200;
+  }
+
+  .layer3_text strong {
+    font-family: 'spartan_mbsemibold';
+  }
+
+  a:link, a:visited {
+    color: #e04200;
+  }
+
+  a:focus, a:hover, a:active {
+    color: #e04100;
+  }
+
+  .pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img-flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  /*
+   * -- LAYOUT STYLES --
+   * These are some useful classes which I will need
+   */
+
+  .l-box {
+    padding: 1em;
+  }
+
+  .l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .is-center {
+    text-align: center;
+  }
+
+  /*
+   * -- SPLASH STYLES --
+   * This is the blue top section that appears on the page.
+   */
+
+  .splash-container {
+    background-image: url("../images/cape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 94%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+  }
+
+  .splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /* This is the main heading that appears on the blue section */
+
+  .splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+  }
+
+  /* This is the subheading that appears on the blue section */
+
+  .splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+  }
+
+  /*
+   * -- CONTENT STYLES --
+   * This represents the content area (everything below the blue section)
+   */
+
+  .content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+  }
+
+  /* We want to give the content area some more padding */
+
+  .content {
+    padding: 1em 1em 3em;
+  }
+
+  /* This is the class used for the main content headers (<h2>) */
+
+  .content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+  }
+
+  /* This is a modifier class used when the content-head is inside a ribbon */
+
+  .content-head-ribbon {
+    color: white;
+  }
+
+  /* This is the class used for the content sub-headers (<h3>) */
+
+  .content-subhead {
+    color: #1f8dd6;
+  }
+
+  .content-subhead i {
+    margin-right: 7px;
+  }
+
+  .layer1 {
+    text-align: right;
+    font-family: 'spartan_mbregular';
+    font-size: 1.3em;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .layer1 strong {
+    font-family: 'spartan_mbsemibold';
+    color: #e04200;
+  }
+
+  .layer1 img {
+    max-width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    order: 2;
+  }
+
+  .layer1 span {
+    font-family: 'spartan_mbregular';
+    margin-top: -9px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 75%;
+    order: 1;
+    /* in case of longer text */
+  }
+
+  /* This is the class used for layer4 */
+
+  .layer4 {
+    font-family: 'spartan_mbbold';
+    background-color: #ff4620;
+    color: #f3f3f3;
+    font-size: 1.1em;
+    position: relative;
+    padding: 0;
+  }
+
+  .layer4 img {
+    max-width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .layer4 h2 {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80%;
+    /* in case of longer text */
+  }
+  .layer5 .indent1 {
+    margin-left: 10px;
+  }
+
+  .layer5 .indent2 {
+    margin-left: 10px;
+  }
+  .layer5 .indent3 {
+    margin-left: 10px;
+  }
+  .layer5 .indent4 {
+    margin-left: 33px;
+  }
+
+  .layer5 .indent5 {
+    margin-left: 20px;
+    margin-left: 33px;
+  }
+  /* This is class used for layer5 */
+
+  .layer5_background {
+    background: #ffffff;
+    background-image: url("../images/girl.png");
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+
+  .layer5 {
+    font-family: 'spartan_mbregular';
+    font-size: 0.8em;
+    padding-left: 260px;
+  }
+
+  .circle-xl {
+    display: inline-block;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background: #e04200;
+    vertical-align: middle;
+    margin-right: 3em;
+  }
+
+  .circle-l {
+    display: inline-block;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    background: #e04200;
+    vertical-align: middle;
+    margin-right: 2.5em;
+  }
+
+  .circle-m {
+    display: inline-block;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    background: #e04200;
+    vertical-align: middle;
+    margin-right: 2em;
+  }
+
+  .circle-s {
+    display: inline-block;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    background: #e04200;
+    vertical-align: middle;
+    margin-right: 1.2em;
+  }
+
+  .layer5 h3 {
+    display: inline-block;
+    font-family: 'spartan_mbbold';
+    font-size: 1.2em;
+    color: #e04200;
+    vertical-align: middle;
+    max-width: 80%;
+  }
+
+  .layer5 strong {
+    font-family: 'spartan_mbbold';
+  }
+
+  .layer5 .element1 {
+    margin-left: 40px;
+  }
+
+  .layer5 .element1 ul {
+    margin-left: 40px;
+    list-style-type: none;
+  }
+
+  .layer5 li {
+    padding-bottom: 0.8em;
+  }
+
+  .layer5 .element2 {
+    margin-left: 120px;
+  }
+
+  .layer5 .element2 ul {
+    margin-left: 30px;
+    list-style-type: none;
+  }
+
+  .layer5 .element3 {
+    margin-left: 135px;
+  }
+
+  .layer5 .element3 ul {
+    margin-left: 14px;
+    list-style-type: none;
+  }
+
+  .layer5 .element4 {
+    margin-left: 195px;
+  }
+
+  .layer5 .element4 ul {
+    margin-left: 3px;
+    list-style-type: none;
+  }
+
+  .layer6 {
+    text-align: right;
+    margin-top: -1.2em;
+  }
+
+  .layer6 img {
+    max-width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .layer6 span {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80%;
+    /* in case of longer text */
+  }
+
+  .layer7 {
+    text-align: right;
+  }
+
+  /* This is the class used for the footer */
+
+  .footer {
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+box-sizing: border-box;
+  }
+
+  .footer a {
+    font-family: 'spartan_mbsemibold';
+  }
 }
