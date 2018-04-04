@@ -100,7 +100,7 @@
 }
 
 .layer1 img {
-  max-width: 80%;
+  max-width: 70%;
   padding-bottom: 2em;
   order: 1;
 }
@@ -507,9 +507,10 @@ a:focus, a:hover, a:active {
     color: #e04200;
   }
   .layer1 img {
-    max-width: 25%;
+    max-width: 20%;
     display: inline-block;
     vertical-align: middle;
+    padding-left: 1em;
     order: 2;
   }
   .layer1 span {
