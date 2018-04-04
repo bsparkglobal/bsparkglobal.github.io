@@ -96,7 +96,8 @@
 
 .layer1 strong {
   font-family: 'spartan_mbsemibold';
-  color: #e04200;
+  
+   color: #ff4300;
 }
 
 .layer1 img {
@@ -117,7 +118,7 @@
 .layer2_main {
   width: 100%;
   height: 100%;
-  background-color: #ff4620;
+  background-color: #ff4300;
   margin: 0;
   padding: 10px;
 }
@@ -148,7 +149,7 @@
 
 .layer3_text h2 strong {
   font-family: 'spartan_mbsemibold';
-  color: #e04200;
+  color: #ff4300;
 }
 
 .layer3_text strong {
@@ -156,7 +157,7 @@
 }
 
 .layer3_form {
-  color: #e04200;
+  color: #ff4300;
   font-size: 0.8em;
   text-align: left;
   padding-left: 10%;
@@ -177,27 +178,27 @@
 .layer3_form input[type=email] {
   border: 0px;
   width: 83%;
-  color: #e04200;
+  color: #ff4300;
 }
 
 .layer3_form input[type=submit] {
   border: 1px solid #ffffff;
   border-radius: 50%;
-  background-color: #e04200;
+  background-color: #ff4300;
   color: #ffffff;
   height: 2.5em;
   width: 2.5em;
 }
 
 .layer3_form input[type=submit]:focus, .layer3_form input[type=submit]:hover {
-  border: 1px solid #e04200;
+  border: 1px solid #ff4300;
   background-color: #ffffff;
   color: #e04200;
 }
 
 .layer4 {
   font-family: 'spartan_mbbold';
-  background-color: #ff4620;
+  background-color: #ff4300;
   text-align: center;
   color: #f3f3f3;
   font-size: 1.1em;
@@ -257,11 +258,11 @@
 }
 
 a:link, a:visited {
-  color: #e04200;
+  color: #ff4300;
 }
 
 a:focus, a:hover, a:active {
-  color: #e04100;
+  color: #ff4300;
 }
 
 @media screen and (min-width: 960px) {
@@ -285,7 +286,7 @@ a:focus, a:hover, a:active {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #ff4620;
+    background-color: #ff4300;
     margin: 0;
     padding: 0;
     margin-top: -10;
@@ -353,7 +354,7 @@ a:focus, a:hover, a:active {
     padding: 0;
   }
   .layer3_form {
-    color: #e04200;
+    color: #ff4300;
     font-size: 0.8em;
     text-align: left;
     padding-left: 10%;
@@ -371,20 +372,20 @@ a:focus, a:hover, a:active {
   .layer3_form input[type=email] {
     border: 0px;
     width: 83%;
-    color: #e04200;
+    color: #ff4300;
   }
   .layer3_form input[type=submit] {
     border: 1px solid #ffffff;
     border-radius: 50%;
-    background-color: #e04200;
+    background-color: #ff4300;
     color: #ffffff;
     height: 2.5em;
     width: 2.5em;
   }
   .layer3_form input[type=submit]:focus, .layer3_form input[type=submit]:hover {
-    border: 1px solid #e04200;
+    border: 1px solid #ff4300;
     background-color: #ffffff;
-    color: #e04200;
+    color: #ff4300;
   }
   /* layer3 Text Container - constrains text area to within the layer3 */
   .layer3_text_container {
@@ -421,16 +422,16 @@ a:focus, a:hover, a:active {
   }
   .layer3_text h2 strong {
     font-family: 'spartan_mbsemibold';
-    color: #e04200;
+    color: #ff4300;
   }
   .layer3_text strong {
     font-family: 'spartan_mbsemibold';
   }
   a:link, a:visited {
-    color: #e04200;
+    color: #ff4300;
   }
   a:focus, a:hover, a:active {
-    color: #e04100;
+    color: #ff4300;
   }
   .pure-img-responsive {
     max-width: 100%;
@@ -504,7 +505,7 @@ a:focus, a:hover, a:active {
   }
   .layer1 strong {
     font-family: 'spartan_mbsemibold';
-    color: #e04200;
+    color: #ff4300;
   }
   .layer1 img {
     max-width: 20%;
@@ -526,7 +527,8 @@ a:focus, a:hover, a:active {
   /* This is the class used for layer4 */
   .layer4 {
     font-family: 'spartan_mbbold';
-    background-color: #ff4620;
+    background-color: #ff4300
+        ;
     color: #f3f3f3;
     font-size: 0.8em;
     position: relative;
@@ -611,7 +613,7 @@ a:focus, a:hover, a:active {
     display: inline-block;
     font-family: 'spartan_mbbold';
     font-size: 1.2em;
-    color: #e04200;
+    color: #ff4300;
     vertical-align: middle;
     max-width: 80%;
   }
