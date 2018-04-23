@@ -96,7 +96,7 @@
 
 .layer1 strong {
   font-family: 'spartan_mbsemibold';
-  
+
    color: #ff4300;
 }
 
@@ -273,8 +273,8 @@ a:focus, a:hover, a:active {
   }
   /* Main Container -  this controls the size of the layer2 */
   .layer2_container {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     padding: 0;
     flex-shrink: 0;
     flex-grow: 0;
